@@ -11,7 +11,7 @@ compatibility_date = "2026-11-14"
 # works (local KV emulation) but `wrangler deploy` will fail.
 [[kv_namespaces]]
 binding = "SEEN"
-id = "REPLACE_AFTER_KV_CREATE"
+id = "99b1b36878e8467888b1394a4a8109d4"
 
 [vars]
 CHAIN_MODE = "stub"
