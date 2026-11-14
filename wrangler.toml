@@ -1,0 +1,17 @@
+name = "gatekeeper-agent"
+main = "src/worker.mjs"
+compatibility_date = "2026-11-14"
+
+# HMAC_SECRET is a secret: set it with `wrangler secret put HMAC_SECRET`
+# or in the Cloudflare dashboard AFTER agent registration shows it
+# (exactly once). Never commit it, never put it in this file.
+#
+# KV namespace id: fill in after `wrangler kv namespace create SEEN`
+# (the command prints the id). Until then, `wrangler dev --local`
+# works (local KV emulation) but `wrangler deploy` will fail.
+[[kv_namespaces]]
+binding = "SEEN"
+id = "REPLACE_AFTER_KV_CREATE"
+
+[vars]
+CHAIN_MODE = "stub"

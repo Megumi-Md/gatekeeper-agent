@@ -1,0 +1,23 @@
+{
+  "name": "gatekeeper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/run-tests.mjs",
+    "test:worker": "node test/run-worker-tests.mjs",
+    "start": "node src/server.mjs",
+    "dev:worker": "wrangler dev --local",
+    "deploy:worker": "wrangler deploy",
+    "download": "node download-artifacts.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "snarkjs": "^0.7.6"
+  },
+  "devDependencies": {
+    "wrangler": "^4.162.0"
+  }
+}
